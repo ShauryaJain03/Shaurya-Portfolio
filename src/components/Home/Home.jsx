@@ -5,7 +5,7 @@ function Home() {
       <main className="flex flex-col-reverse md:flex-row justify-start h-[calc(100vh)]">
         <section className="md:w-3/5 w-full md:h-full h-1/2 flex flex-col justify-center md:justify-center items-center px-6 text-center">
           <div className="w-3/4">
-            <p className="text-4xl md:text-5xl font-bold md:text-left md:py-5 py-1">
+            <p className="text-4xl md:text-5xl font-bold md:text-left md:py-5 py-2">
               Frontend Developer Student
             </p>
             <p className="text-slate-600 md:text-xl text-lg md:text-left">
@@ -14,15 +14,37 @@ function Home() {
               elit.
             </p>
           </div>
-          <div className="flex my-5">
-            <p>github</p>
-            <p>linkedin</p>
-            <p>insta</p>
+
+          <div className="flex justify-center items-center gap-4 py-2 mt-4 mr-auto ml-[90px]">
+            <a
+              href="https://www.linkedin.com/in/shaurya--jain/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a
+              href="https://github.com/ShauryaJain03"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_jaini_shaurya/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-instagram fa-xl"></i>
+            </a>
           </div>
         </section>
 
         <section className="md:w-2/5 w-full h-2/5 flex justify-center md:justify-between items-center md:h-full">
-          <img src="public/IMG-20220917-WA0002.jpg" className="rounded-full swing" />
+          <img
+            src="public/IMG-20220917-WA0002.jpg"
+            className="rounded-full swing"
+          />
         </section>
       </main>
     </>
