@@ -3,7 +3,7 @@ function Footer() {
       <div className="md:h-2/5 h-1/5 bg-slate-900 w-full flex flex-col justify-between items-center">
         <div className="flex flex-col justify-center items-center gap-2">
           <p className="text-white py-3">Socials</p>
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-4 pb-3">
             <a
               href="https://www.linkedin.com/in/shaurya--jain/"
               target="_blank"

@@ -15,7 +15,7 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex justify-center items-center gap-4 py-2 mt-4 mr-auto ml-[90px]">
+          <div className="flex justify-center items-center gap-4 py-2 mt-4 mx-auto ">
             <a
               href="https://www.linkedin.com/in/shaurya--jain/"
               target="_blank"
@@ -29,6 +29,13 @@ function Home() {
               rel="noreferrer"
             >
               <i className="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a
+              href="mailto:jainshaurya.sj@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-regular fa-envelope fa-xl"></i>
             </a>
             <a
               href="https://www.instagram.com/_jaini_shaurya/"
