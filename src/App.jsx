@@ -1,11 +1,15 @@
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
 function App() {
   return (
     <>
       <div>
-        <Navbar />
+        <Navbar/>
         <Home />
+        <About/>
+        <Contact/>
       </div>
     </>
   );

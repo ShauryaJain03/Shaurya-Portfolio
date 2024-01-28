@@ -1,12 +1,12 @@
 function Tech() {
     return (
-      <div className="w-full md:flex-row md:justify-evenly md:items-center flex flex-col justify-center items-center">
+      <div className="w-4/5 flex flex-col justify-center md:flex-row md:items-center md:justify-evenly items-center md:py-8 md:pb-2">
         <p className="text-2xl font-serif text-blue-500 mb-5">Technologies</p>
 
           <img src="https://skillicons.dev/icons?i=html,css,js,ts,py&perline=5&theme=light" className="mb-3"/>
           
           <img src="https://skillicons.dev/icons?i=bootstrap,tailwind,react,nextjs,docker&perline=6&theme=light" />
-        </div>
+      </div>
     );
 }
 

@@ -1,4 +1,5 @@
 body {background: white;}
+
 .swing {
     animation: swing ease-in-out 1s infinite alternate;
     transform-origin: center -20px;
