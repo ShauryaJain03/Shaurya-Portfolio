@@ -1,6 +1,8 @@
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -9,34 +11,47 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { id: 1, text: "About" },
-    { id: 2, text: "Projects" },
-    { id: 3, text: "Contact" },
+    { id: 1, text: "About", link: "about" },
+    { id: 2, text: "Projects", link: "projects" },
+    { id: 3, text: "Contact", link: "contact" },
+    {
+      id: 4,
+      text: "Resume",
+      link: "https://www.npmjs.com/package/react-scroll",
+    },
   ];
 
   return (
-    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 font-bold shadow-lg fixed z-10 bg-white min-w-[360px]">
+    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 font-bold shadow-lg z-10 bg-white min-w-[360px] max-w-[1627px] box-border font-heading top-0">
       {/* Logo */}
 
-      <div className="flex items-center">
-        <p className="text-2xl font-bold mx-2 text-portbrown">Shaurya</p>
-      </div>
+      <Link to="/" spy={true} smooth={true} duration={500}>
+        <div className="flex items-center">
+          <p className="text-2xl font-bold mx-2 text-portbrown">Shaurya</p>
+        </div>
+      </Link>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex mr-1">
         {navItems.map((item) => (
-          <li
+          <Link
             key={item.id}
-            className="py-2 px-4 mx-4 rounded-full m-2 cursor-pointer duration-300 border-[#3399CC] border-2 text-md text-[#3399CC]"
+            to={`${item.link}`}
+            spy={true}
+            smooth={true}
+            duration={500}
           >
-            {item.text}
-          </li>
+            {" "}
+            <li className="py-2 px-4 mx-4 rounded-full m-2 cursor-pointer duration-300 border-[#3399CC] border-2 text-md text-[#3399CC]">
+              {item.text}
+            </li>
+          </Link>
         ))}
       </ul>
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className="block md:hidden mr-2">
-        {nav ? <CloseIcon/> : <MenuIcon/>}
+        {nav ? <CloseIcon /> : <MenuIcon />}
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -50,20 +65,25 @@ const Navbar = () => {
         {/* Mobile Logo */}
 
         <div className="flex">
-          <p className="m-4 text-2xl">
-            Shaurya
-          </p>
+          <p className="m-4 text-2xl">Shaurya</p>
         </div>
 
         {/* Mobile Navigation Items */}
         <div className="my-5">
           {navItems.map((item) => (
-            <li
+            <Link
               key={item.id}
-              className="py-3 border-b px-5 rounded-xl duration-300 hover:text-white  text-portblue cursor-pointer text-xl"
+              to={`${item.link}`}
+              spy={true}
+              smooth={true}
+              offset={100}
+              duration={500}
+              onClick={handleNav}
             >
-              {item.text}
-            </li>
+              <li className="py-3 border-b px-5 rounded-xl duration-300 hover:text-white  text-portblue cursor-pointer text-xl">
+                {item.text}
+              </li>
+            </Link>
           ))}
         </div>
       </ul>

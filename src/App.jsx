@@ -7,11 +7,21 @@ function App() {
   return (
     <>
       <div>
-        <Navbar/>
-        <Home />
-        <About/>
-        <Projects/>
-        <Contact/>
+        <section>
+          <Navbar />
+        </section>
+        <section>
+          <Home />
+        </section>
+        <section>
+          <About />
+        </section>
+        <section>
+          <Projects />
+        </section>
+        <section>
+          <Contact/>
+        </section>
       </div>
     </>
   );

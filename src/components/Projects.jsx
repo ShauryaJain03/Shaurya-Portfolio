@@ -14,14 +14,14 @@ function Item(props) {
         <CardMedia
           component="img"
           height="140"
-          image="https://placehold.co/300x200"
+          image="https://placehold.co/200x100"
           alt="project"
         />
         <CardContent>
-          <Typography gutterBottom variant="h6" component="div">
+          <Typography gutterBottom variant="h6" component="div" sx={{fontFamily:"Montserrat",fontWeight:"bold"}}>
             {props.name}
           </Typography>
-          <p className="text-sm text-ellipsis text-stone-500">
+          <p className="text-sm text-ellipsis text-stone-500 font-body">
             {props.desc}
           </p>
         </CardContent>
@@ -31,14 +31,17 @@ function Item(props) {
 }
 function Projects() {
   return (
-    <div className="flex flex-col justify-center items-center min-w-[360px]">
-      <p className="text-2xl font-bold text-center my-8 text-portblue">
+    <div
+      className="flex flex-col justify-center items-center min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10"
+      id="projects"
+    >
+      <p className="text-2xl font-bold font-heading text-center my-8 text-portblue">
         Projects
       </p>
-      <p className="mx-3 mb-2 text-xl text-center">
+      <p className="mx-3 mb-2 text-xl text-center font-body">
         “The way to get started is to quit talking and begin doing.”{" "}
       </p>
-      <Box sx={{ flexGrow: 1 }} className="px-8 py-8">
+      <Box sx={{ flexGrow: 1 }} className="md:px-28 py-8 px-8">
         <Grid
           container
           spacing={{ xs: 2, md: 3 }}

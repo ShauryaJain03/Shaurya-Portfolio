@@ -8,6 +8,10 @@ export default {
         portbrown: "#330000",
         portwood: "#CDB99C",
       },
+      fontFamily: {
+        body: ["Roboto"],
+        heading: ["Montserrat"],
+      },
     },
   },
   plugins: [],

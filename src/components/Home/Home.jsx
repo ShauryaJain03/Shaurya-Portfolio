@@ -2,17 +2,18 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <main className="flex flex-col-reverse md:flex-row justify-start h-[calc(100vh)] min-w-[360px]">
+      <main className="flex flex-col-reverse md:flex-row justify-start min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10">
         <section className="md:w-3/5 w-full md:h-full h-1/2 flex flex-col justify-start md:justify-center items-center px-6 text-center">
           <div className="w-3/4">
-            <p className="text-4xl md:text-5xl font-bold md:text-left md:py-5 pt-8 pb-4 text-portbrown">
-              Frontend Developer Student
+            <p className="text-4xl md:text-5xl font-heading font-bold md:text-left md:py-5 pt-8 pb-4 text-portbrown">
+              Frontend Developer & Student
             </p>
-            <p className="text-portbrown md:text-xl text-lg md:text-left">
+            <p className="text-portbrown md:text-xl text-lg md:text-left font-body">
               Hi, I&apos;m{" "}
-              <p className="inline-block text-portblue font-bold">Shaurya Jain</p>. A
-              passionate frontend developer based in Noida,India Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit.
+              <p className="inline-block text-portblue font-body font-bold">
+                Shaurya Jain
+              </p>
+              . A passionate frontend developer based in Noida , India. 
             </p>
           </div>
 
@@ -48,10 +49,12 @@ function Home() {
           </div>
         </section>
 
-        <section className="md:w-2/5 w-full h-2/5 flex justify-center md:justify-center items-center md:h-full">
+        <section className="md:w-2/5 w-full h-2/5 flex justify-center md:justify-center items-center md:h-full my-5 md:my-0 ">
           <img
-            src="public/IMG-20220917-WA0002.jpg"
-            className="rounded-full swing"
+            src="Shaurya.jpg"
+            className="rounded-full"
+            height={300}
+            width={300}
           />
         </section>
       </main>

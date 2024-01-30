@@ -14,12 +14,15 @@ const theme = createTheme({
 });
 function Contact() {
     return (
-      <div className="h-[calc(100vh-100px)] flex flex-col items-center gap-3 min-w-[360px]">
+      <div
+        className="flex flex-col items-center gap-3 min-w-[360px] max-w-[1267px] box-border mx-auto md:mt-20 mt-10 font-body "
+        id="contact"
+      >
         <ThemeProvider theme={theme}>
-          <div className="h-full text-center mt-12 text-2xl font-bold text-[#3399CC]">
+          <div className="h-full text-center my-8 text-2xl font-bold text-[#3399CC] font-heading">
             Contact
           </div>
-          <p className="text-lg md:text-xl font-semibol w-4/5 text-center my-8">
+          <p className="text-lg md:text-xl font-semibol w-4/5 text-center mb-4 font-semibold">
             I&apos;m excited to connect with you! Feel free to use the contact
             form below or reach me directly via email!
           </p>
