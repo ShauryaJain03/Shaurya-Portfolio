@@ -1,6 +1,6 @@
 function Form() {
     return (
-      <div className="w-4/5">
+      <div className="w-4/5 md:w-2/5">
         <section
           id="login"
           className="p-4 flex flex-col justify-center  mx-auto"
@@ -53,7 +53,7 @@ function Form() {
               ></textarea>
 
               <button
-                className="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-pink-600 to-red-600 font-medium text-gray-100 block transition duration-300"
+                className="px-4 py-1.5 rounded-xl shadow-lg border-[#330000] border-2 font-medium text-[#330000] block transition duration-300 w-2/5"
                 type="submit"
               >
                 <span id="login_process_state" className="hidden">

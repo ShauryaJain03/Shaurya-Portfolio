@@ -2,7 +2,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        portblue: "#3399CC",
+        portbrown: "#330000",
+        portwood: "#CDB99C",
+      },
+    },
   },
   plugins: [],
 };

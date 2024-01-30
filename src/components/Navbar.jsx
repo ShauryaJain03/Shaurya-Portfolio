@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from "@mui/icons-material/Menu";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -14,20 +15,19 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 bg-slate-50 font-bold shadow-lg fixed z-10">
+    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 font-bold shadow-lg fixed z-10 bg-white min-w-[360px]">
       {/* Logo */}
 
       <div className="flex items-center">
-        <p className="text-xl mx-2">Shaurya</p>
+        <p className="text-2xl font-bold mx-2 text-portbrown">Shaurya</p>
       </div>
-
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex mr-1">
         {navItems.map((item) => (
           <li
             key={item.id}
-            className="p-4 rounded-xl m-2 cursor-pointer duration-300 hover:text-blue-600 text-lg"
+            className="py-2 px-4 mx-4 rounded-full m-2 cursor-pointer duration-300 border-[#3399CC] border-2 text-md text-[#3399CC]"
           >
             {item.text}
           </li>
@@ -36,12 +36,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className="block md:hidden mr-2">
-        {nav ? (
-          <div
-          >hi</div>
-        ) : (
-          <div>close</div>
-        )}
+        {nav ? <CloseIcon/> : <MenuIcon/>}
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -55,13 +50,9 @@ const Navbar = () => {
         {/* Mobile Logo */}
 
         <div className="flex">
-          <img
-            src="../logo.png"
-            alt=""
-            height={30}
-            width={60}
-            className="m-3"
-          />
+          <p className="m-4 text-2xl">
+            Shaurya
+          </p>
         </div>
 
         {/* Mobile Navigation Items */}
@@ -69,7 +60,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li
               key={item.id}
-              className="py-3 border-b px-5 rounded-xl duration-300 hover:text-white cursor-pointer border-stone-300 text-medBlue-200"
+              className="py-3 border-b px-5 rounded-xl duration-300 hover:text-white  text-portblue cursor-pointer text-xl"
             >
               {item.text}
             </li>
