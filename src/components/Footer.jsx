@@ -14,7 +14,11 @@ function Footer() {
                 style={{ color: "white" }}
               ></i>
             </a>
-            <a>
+            <a
+              href="https://github.com/ShauryaJain03"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i
                 className="fa-brands fa-github fa-2xl"
                 style={{ color: "white" }}
@@ -26,7 +30,11 @@ function Footer() {
                 style={{ color: "white" }}
               ></i>
             </a>
-            <a>
+            <a
+              href="https://www.instagram.com/_jaini_shaurya/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i
                 className="fa-brands fa-instagram fa-2xl"
                 style={{ color: "white" }}

@@ -22,7 +22,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 font-bold shadow-lg z-10 bg-white min-w-[360px] max-w-[1627px] box-border font-heading top-0">
+    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 font-bold shadow-lg z-10  min-w-[360px] max-w-[1627px] box-border font-heading top-0">
       {/* Logo */}
 
       <Link to="/" spy={true} smooth={true} duration={500}>
@@ -76,11 +76,10 @@ const Navbar = () => {
               to={`${item.link}`}
               spy={true}
               smooth={true}
-              offset={100}
               duration={500}
               onClick={handleNav}
             >
-              <li className="py-3 border-b px-5 rounded-xl duration-300 hover:text-white  text-portblue cursor-pointer text-xl">
+              <li className="py-3 border-b px-5 rounded-xl duration-300 hover:text-blue-500  text-portblue cursor-pointer text-xl">
                 {item.text}
               </li>
             </Link>
