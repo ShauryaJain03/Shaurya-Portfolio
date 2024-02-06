@@ -2,9 +2,9 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <main className="flex flex-col-reverse md:flex-row justify-start min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10">
+      <main className="flex flex-col-reverse md:flex-row justify-start min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10 ">
         <section className="md:w-3/5 w-full md:h-full h-1/2 flex flex-col justify-start md:justify-center items-center px-6 text-center">
-          <div className="w-3/4">
+          <div className="w-4/5">
             <p className="text-4xl md:text-5xl font-heading font-bold md:text-left md:py-5 pt-8 pb-4 text-portbrown">
               Frontend Developer & Student
             </p>
@@ -13,11 +13,17 @@ function Home() {
               <p className="inline-block text-portblue font-body font-bold">
                 Shaurya Jain
               </p>
-              . A passionate frontend developer based in Noida , India. 
+              . A passionate frontend developer based in{" "}
+              <p className="inline-block text-portblue font-body font-bold">
+                Noida , India
+              </p>
+              . Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Tempora eaque beatae libero facilis ad deleniti incidunt
+              voluptatibus magni veniam consequatur.
             </p>
           </div>
 
-          <div className="flex justify-center items-center gap-4 py-2 mt-4 mx-auto">
+          <div className="flex justify-center items-center gap-4 mt-6 mx-auto">
             <a
               href="https://www.linkedin.com/in/shaurya--jain/"
               target="_blank"
@@ -49,12 +55,10 @@ function Home() {
           </div>
         </section>
 
-        <section className="md:w-2/5 w-full h-2/5 flex justify-center md:justify-center items-center md:h-full my-5 md:my-0 ">
+        <section className="md:w-2/5 w-full h-2/5 flex justify-center md:justify-center items-center md:h-full my-5 md:my-0">
           <img
             src="Shaurya.jpg"
-            className="rounded-full"
-            height={300}
-            width={300}
+            className="rounded-full md:h-[300px] md:w-[300px] h-[250px] w-[250px]"
           />
         </section>
       </main>

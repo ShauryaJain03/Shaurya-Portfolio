@@ -2,31 +2,38 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
+import "./Projects.css";
 import { CardActionArea } from "@mui/material";
 
 function Item(props) {
   return (
-    <Card sx={{ maxWidth: 345,maxHeight:250}} className="my-3 mx-3">
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="assic.png"
-          alt="project"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h6" component="div" sx={{fontFamily:"Montserrat",fontWeight:"bold"}}>
-            {props.name}
-          </Typography>
-          <p className="text-sm text-ellipsis text-stone-500 font-body">
-            {props.desc}
-          </p>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <div className="content">
+      <Card
+        className="my-3 mx-3 rounded-lg"
+        sx={{ maxWidth: 345, maxHeight: 250 }}
+      >
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            image={`${props.img}`}
+            alt="project"
+            className="card-media"
+          />
+
+          {/* background-image: linear-gradient(rgba(22, 47, 67, 0.7),
+        rgba(4, 9, 30, 0.7)) */}
+
+          <a href={`${props.link}`} target="_blank" rel="noreferrer">
+            <div className="content-overlay"></div>
+            <div className="content-details fadeIn-top">
+              <h3>{props.name}</h3>
+              <p>{props.desc}</p>
+            </div>
+          </a>
+        </CardActionArea>
+      </Card>
+    </div>
   );
 }
 function Projects() {
@@ -35,7 +42,7 @@ function Projects() {
       className="flex flex-col justify-center items-center min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10"
       id="projects"
     >
-      <p className="text-2xl font-bold font-heading text-center my-8 text-portblue">
+      <p className="text-3xl font-bold font-heading text-center my-8 text-portblue">
         Projects
       </p>
       <p className="mx-3 mb-2 text-xl text-center font-body px-5">
@@ -51,24 +58,23 @@ function Projects() {
             <Item
               name={"ASSIC"}
               desc={"Website to connect IIIT-A alumni and students"}
+              link={"https://assic.iiita.ac.in/"}
+              img={"gdsc.png"}
             />
           </Grid>
           <Grid xs={1} sm={4} md={4}>
             <Item
-              name={"Medify.ai"}
-              desc={"ML for early stage disease detection"}
+              name={"GDSC IIIT-A"}
+              desc={"Website for GDSC IIIT-A designed and developed "}
+              link={"https://gdsc.iiita.ac.in/"}
+              img={"gdsc.png"}
             />
           </Grid>
           <Grid xs={1} sm={4} md={4}>
             <Item
-              name={"Quizzify"}
-              desc={"Interactive quiz application built using Python"}
-            />
-          </Grid>
-          <Grid xs={1} sm={4} md={4}>
-            <Item
-              name={"G Meet"}
+              name={"Google Meet"}
               desc={"Full Stack clone of Google Meet with WebRTC"}
+              img={"gdsc.png"}
             />
           </Grid>
         </Grid>
