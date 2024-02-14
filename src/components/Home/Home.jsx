@@ -5,16 +5,16 @@ function Home() {
       <main className="flex flex-col-reverse md:flex-row justify-start min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10 ">
         <section className="md:w-3/5 w-full md:h-full h-1/2 flex flex-col justify-start md:justify-center items-center px-6 text-center">
           <div className="w-4/5">
-            <p className="text-4xl md:text-5xl font-heading font-bold md:text-left md:py-5 pt-8 pb-4 text-portbrown">
+            <p className="text-4xl md:text-5xl font-heading font-bold md:text-left md:py-5 pt-8 pb-4 text-porttext">
               Frontend Developer & Student
             </p>
-            <p className="text-portbrown md:text-xl text-lg md:text-left font-body">
+            <p className="text-porttext md:text-xl text-lg md:text-left font-body">
               Hi, I&apos;m{" "}
-              <p className="inline-block text-portblue font-body font-bold">
+              <p className="inline-block text-portfooter font-body font-bold">
                 Shaurya Jain
               </p>
               . A passionate frontend developer based in{" "}
-              <p className="inline-block text-portblue font-body font-bold">
+              <p className="inline-block text-portfooter font-body font-bold">
                 Noida , India
               </p>
               . Lorem ipsum dolor, sit amet consectetur adipisicing elit.

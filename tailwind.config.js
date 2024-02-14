@@ -4,9 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        portblue: "#3399CC",
-        portbrown: "#330000",
-        portwood: "#CDB99C",
+        portbackground: "#dbe8f7",
+        portfooter: "#5551d7",
+        portblue: "#1ec4f8",
+        porttext: "#0a1e50",
+        portdarkpurple: "#4530b3",
+        portlight: "#f9fafe",
       },
       fontFamily: {
         body: ["Roboto"],
@@ -16,4 +19,3 @@ export default {
   },
   plugins: [],
 };
-

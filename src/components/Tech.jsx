@@ -1,21 +1,21 @@
 function Tech() {
   return (
     <div className="w-4/5 flex flex-col justify-center items-center lg:pt-8">
-      <p className="text-3xl text-[#3399CC] font-bold font-heading my-8">
+      <p className="text-3xl text-porttext font-bold font-heading my-8">
         Technologies I Use
       </p>
-      <div className="flex flex-col justify-center items-center lg:flex-row gap-3 px-5 mt-4">
+      <div className="flex flex-col justify-center items-center xl:flex-row gap-3 md:gap-8 px-5 mt-4">
         <img
-          src="https://skillicons.dev/icons?i=html,css,js,ts,py&perline=5&theme=light"
+          src="https://skillicons.dev/icons?i=html,css,js,ts,py,cpp&perline=6&theme=light"
           className="mb-3"
         />
 
         <img
-          src="https://skillicons.dev/icons?i=bootstrap,tailwind,react,nextjs,redux&perline=6&theme=light"
+          src="https://skillicons.dev/icons?i=bootstrap,tailwind,react,nextjs,redux,docker&perline=6&theme=light"
           className="mb-3"
         />
         <img
-          src="https://skillicons.dev/icons?i=firebase,mysql,mongodb,docker,nodejs&perline=6&theme=light"
+          src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,postman,firebase&perline=6&theme=light"
           className="mb-3"
         />
       </div>

@@ -2,27 +2,19 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";
 import Card from "@mui/material/Card";
-import CardMedia from "@mui/material/CardMedia";
 import "./Projects.css";
 import { CardActionArea } from "@mui/material";
 
 function Item(props) {
   return (
     <div className="content">
-      <Card
-        className="my-3 mx-3 rounded-lg"
-        sx={{ maxWidth: 345, maxHeight: 250 }}
-      >
+      <Card className="my-3 mx-3 rounded-lg">
         <CardActionArea>
-          <CardMedia
-            component="img"
-            image={`${props.img}`}
-            alt="project"
-            className="card-media"
-          />
-
           {/* background-image: linear-gradient(rgba(22, 47, 67, 0.7),
         rgba(4, 9, 30, 0.7)) */}
+          <div className="flex items-center justify-center">
+            <img src={`${props.img}`} />
+          </div>
 
           <a href={`${props.link}`} target="_blank" rel="noreferrer">
             <div className="content-overlay"></div>
@@ -42,10 +34,10 @@ function Projects() {
       className="flex flex-col justify-center items-center min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10"
       id="projects"
     >
-      <p className="text-3xl font-bold font-heading text-center my-8 text-portblue">
+      <p className="text-3xl font-bold font-heading text-center my-8 text-porttext">
         Projects
       </p>
-      <p className="mx-3 mb-2 text-xl text-center font-body px-5">
+      <p className="mx-3 mb-2 text-xl text-center font-body px-5 text-porttext">
         “The way to get started is to quit talking and begin doing.”{" "}
       </p>
       <Box sx={{ flexGrow: 1 }} className="md:px-28 py-8 px-20">

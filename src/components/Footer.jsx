@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="bg-portbrown w-full flex flex-col justify-between items-center min-w-[360px] max-w-[1333px] box-border mx-auto">
+    <div className=" bg-porttext w-full flex flex-col justify-between items-center min-w-[360px] max-w-[1333px] box-border mx-auto">
       <div className="flex flex-col justify-center items-center gap-2">
         <p className="text-white py-3 font-body text-xl">Socials</p>
         <div className="flex justify-center items-center gap-4 pb-5">
