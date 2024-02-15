@@ -54,7 +54,7 @@ body {
 }
 
 .content .content-overlay {
-  background: rgba(22, 47, 67, 1);
+  background: rgb(10, 30, 80);
   position: absolute;
   height: 99%;
   width: 100%;
@@ -88,27 +88,15 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
 
 .content:hover .content-details {
   top: 50%;
   left: 50%;
   opacity: 1;
-}
-
-.content-details h3 {
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
-}
-
-.content-details p {
-  color: #fff;
-  font-size: 0.8em;
 }
 
 .fadeIn-bottom {

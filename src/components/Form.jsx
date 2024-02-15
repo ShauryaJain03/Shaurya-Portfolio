@@ -12,12 +12,7 @@ function Form() {
             <label className="text-sm font-medium">Name</label>
             <input
               className="px-2 py-1.5
-          mb-3 mt-1 block w-full border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
-          focus:outline-none
-          focus:border-sky-500
-          focus:ring-1
-          focus:ring-sky-500
-          focus:invalid:border-red-500 focus:invalid:ring-red-500"
+          mb-3 mt-1 block w-full border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400"
               type="text"
               name="username"
               placeholder="Your Name"
@@ -26,12 +21,7 @@ function Form() {
             <label className="text-sm font-medium">Email</label>
             <input
               className="px-2 py-1.5
-          mb-3 mt-1 block w-full border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
-          focus:outline-none
-          focus:border-sky-500
-          focus:ring-1
-          focus:ring-sky-500
-          focus:invalid:border-red-500 focus:invalid:ring-red-500"
+          mb-3 mt-1 block w-full border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400"
               type="text"
               name="username"
               placeholder="Your Email"
@@ -41,10 +31,10 @@ function Form() {
               className="
           mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
           focus:outline-none
-          focus:border-sky-500
+          focus:border-porttext
           focus:ring-1
-          focus:ring-sky-500
-          focus:invalid:border-red-500 focus:invalid:ring-red-500"
+          focus:ring-porttext
+          focus:invalid:border-porttext focus:invalid:ring-porttext"
               name="messages"
               placeholder="Write something"
             ></textarea>

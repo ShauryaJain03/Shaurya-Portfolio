@@ -8,19 +8,23 @@ import { CardActionArea } from "@mui/material";
 function Item(props) {
   return (
     <div className="content">
-      <Card className="my-3 mx-3 rounded-lg">
+      <Card className="my-3 mx-3">
         <CardActionArea>
-          {/* background-image: linear-gradient(rgba(22, 47, 67, 0.7),
-        rgba(4, 9, 30, 0.7)) */}
+          {/*  */}
           <div className="flex items-center justify-center">
             <img src={`${props.img}`} />
           </div>
 
           <a href={`${props.link}`} target="_blank" rel="noreferrer">
             <div className="content-overlay"></div>
-            <div className="content-details fadeIn-top">
-              <h3>{props.name}</h3>
-              <p>{props.desc}</p>
+            <div className="content-details fadeIn-top text-white font-heading">
+              <p className="md:text-xl text-sm font-semibold md:my-3 my-2">
+                {props.name}
+              </p>
+              <p className="md:text-md text-sm">{props.desc}</p>
+              <button className="border-2 border-portdarkpurple md:my-4 rounded-full text-white md:w-1/2 w-3/5 py-1 hover:bg-portdarkpurple md:text-lg text-sm my-2">
+                Visit
+              </button>
             </div>
           </a>
         </CardActionArea>
@@ -59,6 +63,13 @@ function Projects() {
               name={"GDSC IIIT-A"}
               desc={"Website for GDSC IIIT-A designed and developed "}
               link={"https://gdsc.iiita.ac.in/"}
+              img={"gdsc.png"}
+            />
+          </Grid>
+          <Grid xs={1} sm={4} md={4}>
+            <Item
+              name={"Google Meet"}
+              desc={"Full Stack clone of Google Meet with WebRTC"}
               img={"gdsc.png"}
             />
           </Grid>

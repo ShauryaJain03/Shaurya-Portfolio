@@ -9,7 +9,7 @@ function About() {
       <p className="text-3xl mt-16 md:mb-8 font-bold text-porttext font-heading">
         About Me
       </p>
-      <div className="py-2 md:flex md:flex-row w-full px-20 md:justify-center md:items-center flex flex-col justify-center items-center my-8 gap-4">
+      <div className="py-2 md:flex md:flex-row w-full px-20 md:justify-center md:items-center flex flex-col justify-center items-center my-8 gap-8">
         <img src="https://placehold.co/300x200" className="px-6" />
         <p className=" py-6 lg:text-xl text-center md:text-left font-body w-full text-porttext">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nulla
