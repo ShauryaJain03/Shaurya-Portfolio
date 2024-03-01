@@ -9,17 +9,19 @@ function About() {
       <p className="text-3xl mt-16 md:mb-8 font-bold text-porttext font-heading">
         About Me
       </p>
-      <div className="py-2 md:flex md:flex-row w-full px-20 md:justify-center md:items-center flex flex-col justify-center items-center my-8 gap-8">
+      <div className="py-2 lg:flex lg:flex-row w-full px-20 md:justify-center md:items-center flex flex-col justify-center items-center my-8 gap-8">
         <img src="https://placehold.co/300x200" className="px-6" />
-        <p className=" py-6 lg:text-xl text-center md:text-left font-body w-full text-porttext">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nulla
-          explicabo unde laboriosam aliquam! Impedit maiores aspernatur culpa
-          minus neque maxime soluta rerum labore? Eaque cum quam consectetur
-          dolorum incidunt.
+        <p className=" py-6 lg:text-xl text-center lg:text-left font-body w-full text-porttext text-lg">
+          Student at IIIT-Allahabad and a full-stack web developer, I
+          <span>&apos;</span>ve spent the past few years immersing myself in the
+          dynamic world of technology. From collaborating on diverse projects to
+          delving into the intricacies of web development and machine learning,
+          I bring a unique blend of academic insight and hands-on experience to
+          the table.
           <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus alias
-          eius accusamus dicta laboriosam, ducimus obcaecati, doloribus
-          veritatis laborum
+          Whether in the realm of coding or collaborative problem-solving, I am
+          eager to contribute my skills and creativity to the ever-evolving
+          landscape of technology.
         </p>
       </div>
       <Tech />

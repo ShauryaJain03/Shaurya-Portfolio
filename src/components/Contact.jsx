@@ -28,15 +28,15 @@ function Contact() {
         </p>
         <div className="md:flex w-3/5 md:w-2/5 justify-around items-center">
           <div className="flex my-2 gap-2">
-            <LocationOnIcon sx={{ color: "blue.main" }} />
-            <p className="hover:text-portblue text-porttext">Noida,India</p>
+            <LocationOnIcon className="text-portblue" />
+            <p className="text-porttext">Noida , India</p>
           </div>
           <div>
             <a
               href="mailto:jainshaurya.sj@gmail.com"
               className="flex my-2 gap-2"
             >
-              <EmailIcon sx={{ color: "blue.main" }} />
+              <EmailIcon className="text-portblue" />
               <p className="hover:text-portblue text-porttext">
                 jainshaurya.sj@gmail.com
               </p>

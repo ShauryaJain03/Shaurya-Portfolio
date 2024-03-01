@@ -6,7 +6,7 @@ function Home() {
         <section className="md:w-3/5 w-full md:h-full h-1/2 flex flex-col justify-start md:justify-center items-center px-6 text-center">
           <div className="w-4/5">
             <p className="text-4xl md:text-5xl font-heading font-bold md:text-left md:py-5 pt-8 pb-4 text-porttext">
-              Frontend Developer & Student
+              Developer & <br></br> Student
             </p>
             <p className="text-porttext md:text-xl text-lg md:text-left font-body">
               Hi, I&apos;m{" "}

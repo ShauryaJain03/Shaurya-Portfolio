@@ -22,7 +22,7 @@ function Item(props) {
                 {props.name}
               </p>
               <p className="md:text-md text-sm">{props.desc}</p>
-              <button className="border-2 border-portdarkpurple md:my-4 rounded-full text-white md:w-1/2 w-3/5 py-1 hover:bg-portdarkpurple md:text-lg text-sm my-2">
+              <button className="border-2 border-portfooter md:my-4 rounded-full text-white md:w-1/2 w-3/5 py-1 hover:bg-portfooter md:text-lg text-sm my-2">
                 Visit
               </button>
             </div>

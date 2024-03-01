@@ -14,11 +14,6 @@ const Navbar = () => {
     { id: 1, text: "About", link: "about" },
     { id: 2, text: "Projects", link: "projects" },
     { id: 3, text: "Contact", link: "contact" },
-    {
-      id: 4,
-      text: "Resume",
-      link: "",
-    },
   ];
 
   return (
@@ -47,6 +42,16 @@ const Navbar = () => {
             </li>
           </Link>
         ))}
+        <a
+          href="https://www.linkedin.com/in/shaurya--jain/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <button className="py-2 px-4 mx-4 rounded-full m-2 cursor-pointer duration-300 border-porttext border-2 text-md text-porttext hover:bg-porttext hover:text-white">
+            Resume
+          </button>
+        </a>
       </ul>
 
       {/* Mobile Navigation Icon */}
@@ -79,11 +84,21 @@ const Navbar = () => {
               duration={500}
               onClick={handleNav}
             >
-              <li className="py-3 border-b px-5 rounded-xl duration-300 text-porttext cursor-pointer text-xl hover:bg-portbackground">
+              <li className="py-3 border-b px-5 rounded-xl duration-300 text-porttext cursor-pointer text-xl">
                 {item.text}
               </li>
             </Link>
           ))}
+          <a
+            href="https://www.linkedin.com/in/shaurya--jain/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <button className="py-3 border-b px-5 rounded-xl duration-300 text-porttext cursor-pointer text-xl w-full text-left">
+              Resume
+            </button>
+          </a>
         </div>
       </ul>
     </nav>
