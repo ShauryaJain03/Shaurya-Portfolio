@@ -1,7 +1,10 @@
 function Form() {
   return (
     <div className="w-4/5 md:w-2/5">
-      <section id="login" className="p-4 flex flex-col justify-center  mx-auto">
+      <section
+        id="login"
+        className="p-4 flex flex-col justify-center  mx-auto "
+      >
         <div className="p-6 rounded">
           <form
             id="login_form"
