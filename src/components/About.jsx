@@ -1,4 +1,4 @@
-import Tech from "./Tech";
+import Tech from "./Tech/Tech";
 
 function About() {
   return (
@@ -10,12 +10,7 @@ function About() {
         About Me
       </p>
       <div className="py-2 lg:flex lg:flex-row w-full px-16 md:justify-center md:items-center flex flex-col justify-center items-center my-8 gap-8">
-        <img
-          src="https://placehold.co/300x200"
-          className="px-6"
-          height={200}
-          width={300}
-        />
+        <img src="" className="px-6" height={300} width={400} />
         <p className=" py-6 lg:text-xl text-center lg:text-left font-body w-full text-porttext text-lg">
           Student at IIIT Allahabad and a Full Stack web developer, I
           <span>&apos;</span>ve spent the past few years immersing myself in the

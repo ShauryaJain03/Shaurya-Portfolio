@@ -73,13 +73,6 @@ function Projects() {
               img={"gdsc.png"}
             />
           </Grid>
-          <Grid xs={1} sm={4} md={4}>
-            <Item
-              name={"Google Meet"}
-              desc={"Full Stack clone of Google Meet with WebRTC"}
-              img={"gdsc.png"}
-            />
-          </Grid>
         </Grid>
       </Box>
     </div>
