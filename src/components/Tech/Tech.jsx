@@ -2,7 +2,7 @@ function Tech() {
   return (
     <div className="w-4/5 flex flex-col justify-center items-center lg:pt-8">
       <p className="text-3xl text-porttext font-bold font-heading my-8">
-        Technologies I Use
+        Skills
       </p>
       <div className="flex flex-col justify-center items-center xl:flex-row gap-3 md:gap-8 px-5 mt-4">
         <img

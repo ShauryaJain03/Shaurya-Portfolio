@@ -12,8 +12,11 @@ const Navbar = () => {
 
   const navItems = [
     { id: 1, text: "About", link: "about" },
-    { id: 2, text: "Projects", link: "projects" },
-    { id: 3, text: "Contact", link: "contact" },
+    { id: 2, text: "Skills", link: "projects" },
+    { id: 3, text: "Projects", link: "projects" },
+    { id: 4, text: "Experience", link: "projects" },
+    { id: 5, text: "Education", link: "contact" },
+    { id: 6, text: "Contact", link: "contact" },
   ];
 
   return (
@@ -37,7 +40,7 @@ const Navbar = () => {
             duration={500}
           >
             {" "}
-            <li className="py-2 px-4 mx-4 rounded-full m-2 cursor-pointer duration-300 border-porttext border-2 text-md text-porttext hover:bg-porttext hover:text-white">
+            <li className="py-2 px-3 mx-3 rounded-full m-2 cursor-pointer duration-300 text-lg text-porttext hover:bg-porttext hover:text-white">
               {item.text}
             </li>
           </Link>
@@ -48,7 +51,7 @@ const Navbar = () => {
           rel="noreferrer"
         >
           {" "}
-          <button className="py-2 px-4 mx-4 rounded-full m-2 cursor-pointer duration-300 border-porttext border-2 text-md text-porttext hover:bg-porttext hover:text-white">
+          <button className="py-2 px-3 mx-3 rounded-full m-2 cursor-pointer duration-300 border-portdarkpurple border-2 text-lg text-portdarkpurple">
             Resume
           </button>
         </a>

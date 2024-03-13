@@ -43,7 +43,7 @@ function Form() {
             ></textarea>
 
             <button
-              className="px-4 py-1.5 rounded-xl shadow-lg border-porttext border-2 font-medium text-porttext block transition duration-300 w-2/5 hover:bg-porttext hover:text-white"
+              className="px-4 py-1.5 rounded-xl shadow-lg border-porttext border-2 font-medium text-porttext block transition duration-300 w-full hover:bg-porttext hover:text-white"
               type="submit"
             >
               <span id="login_process_state" className="hidden">
