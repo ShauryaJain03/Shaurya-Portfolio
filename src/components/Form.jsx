@@ -1,4 +1,26 @@
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
+
+
 function Form() {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_mqjdzol', 'template_j45rjdg', form.current, {
+        publicKey: 'uuJ__sNyh0GKZ-zba',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
   return (
     <div className="w-4/5 md:w-2/5">
       <section
@@ -8,8 +30,8 @@ function Form() {
         <div className="p-6 rounded">
           <form
             id="login_form"
-            action="api_login"
-            method=""
+            ref={form} 
+            onSubmit={sendEmail}
             className="flex flex-col justify-center text-porttext"
           >
             <label className="text-sm font-medium">Name</label>
