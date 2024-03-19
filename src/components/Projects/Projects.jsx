@@ -10,8 +10,8 @@ import Typography from '@mui/material/Typography';
 
 function Item(props) {
   return (
-    <div className="content  shadow-lg shadow-stone-200">
-    <Card sx={{ minWidth: 220,height:320}}>
+    <div className="content  shadow-lg shadow-stone-200 max-w-[330px]">
+    <Card sx={{ minWidth: 220,height:320,maxWidth:330}}>
       <CardMedia
         sx={{ height: 140 , marginX:3,marginTop:3}}
         image={`${props.img}`}
