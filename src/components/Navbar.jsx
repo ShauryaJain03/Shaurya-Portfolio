@@ -12,15 +12,15 @@ const Navbar = () => {
 
   const navItems = [
     { id: 1, text: "About", link: "about" },
-    { id: 2, text: "Skills", link: "projects" },
-    { id: 3, text: "Projects", link: "projects" },
-    { id: 4, text: "Experience", link: "projects" },
-    { id: 5, text: "Education", link: "contact" },
+    { id: 2, text: "Projects", link: "projects" },
+    { id: 3, text: "Experience", link: "exp" },
+    { id: 4, text: "Skills", link: "skills" },
+    { id: 5, text: "Education", link: "edu" },
     { id: 6, text: "Contact", link: "contact" },
   ];
 
   return (
-    <nav className="w-full flex justify-between items-center h-20 mx-auto px-8 font-bold shadow-lg min-w-[360px] max-w-[1627px] box-border font-heading top-0 bg-white">
+    <nav className="w-full flex justify-between md:justify-around items-center h-20 mx-auto px-8 font-bold shadow-lg min-w-[360px] max-w-[1627px] box-border font-heading top-0 bg-white">
       {/* Logo */}
 
       <Link to="/" spy={true} smooth={true} duration={500}>
@@ -51,11 +51,15 @@ const Navbar = () => {
           rel="noreferrer"
         >
           {" "}
-          <button className="py-2 px-3 mx-3 rounded-full m-2 cursor-pointer duration-300 border-portdarkpurple border-2 text-lg text-portdarkpurple">
-            Resume
-          </button>
+         
         </a>
       </ul>
+      <a href="">
+        <button className="py-2 px-3 mx-3 rounded-full m-2 cursor-pointer duration-300 border-portdarkpurple border-2 text-lg text-portdarkpurple hidden md:block">
+              Resume
+        </button>
+      </a>
+      
 
       {/* Mobile Navigation Icon */}
       <div onClick={handleNav} className="block md:hidden mr-2">

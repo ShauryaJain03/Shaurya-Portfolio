@@ -7,7 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 function Education(){
-    return  <div className="flex flex-col items-center my-8 justify-center ">
+    return  <div className="flex flex-col items-center my-8 justify-center" id="edu">
     <div className="text-porttext text-3xl font-semibold font-heading my-3">Education</div>
     <br/>
     
@@ -37,7 +37,7 @@ function Education(){
       <TimelineConnector />
     </TimelineSeparator>
     <TimelineContent sx={{ py: '12px', px: 2 }}>
-    <EduComp pos={"Somerville School, Noida"} place={"Class XII - PCM with Computer Science"} duration={"May 2023 - Present"} desc={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat rem consectetur nihil odio enim dolore nisi molestias? Dignissimos, placeat delectus."}
+    <EduComp pos={"Somerville School, Noida"} place={"Class XII - PCM with Computer Science"} duration={"April 2009 - June 2021"} desc={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat rem consectetur nihil odio enim dolore nisi molestias? Dignissimos, placeat delectus."}
     img="https://www.schoolmykids.com/smk-media/2018/07/Somerville-School-Noida.png"
     />
     </TimelineContent>

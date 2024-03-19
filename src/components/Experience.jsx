@@ -8,8 +8,8 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { LaptopMac } from '@mui/icons-material';
 
 export function EduComp(props){
-    return <div className="flex items-center justify-center my-4">
-        <div className="border-2 h-[200px] w-[500px] rounded-lg flex flex-col border-portdarkpurple">
+    return <div className="flex items-center justify-center my-6">
+        <div className="border-2 md:h-[200px] md:w-[500px] w-[300px] rounded-lg flex flex-col border-portdarkpurple bg-white">
             <div className="h-2/5 flex items-center justify-center mx-4">
                 <div className="w-[12%] h-4/5">
                     <img src={`${props.img}`} className="rounded-xl"/>
@@ -25,7 +25,6 @@ export function EduComp(props){
                     {props.desc}
                 </div>
                 <div className="flex">
-                    <p className="font-bold">Skills:</p>
                     <p>{props.skills}</p>
                 </div>
             </div>
@@ -34,7 +33,7 @@ export function EduComp(props){
 }
 
 function Experience(){
-    return <div className="flex flex-col items-center my-8 justify-center ">
+    return <div className="flex flex-col items-center my-8 justify-center" id='exp'>
         <div className="text-porttext text-3xl font-semibold font-heading my-3">Experience</div>
         <br/>
         
@@ -50,7 +49,7 @@ function Experience(){
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
         <EduComp pos={"Web Developer"} place={"GDSC IIIT-A"} duration={"Aug 2023 - Present"} desc={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat rem consectetur nihil odio enim dolore nisi molestias? Dignissimos, placeat delectus."}
-        skills={"React.js | Node.js | Express | Tailwind"}
+        skills={"Skills: React.js | Node.js | Express | Tailwind"}
         img="gdsclogo.png"
         />
         </TimelineContent>
@@ -66,7 +65,7 @@ function Experience(){
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
         <EduComp pos={"Web Developer"} place={"ASSIC IIIT-A"} duration={"May 2023 - Present"} desc={"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat rem consectetur nihil odio enim dolore nisi molestias? Dignissimos, placeat delectus."}
-        skills={"HTML | Javascript | CSS | Bootstrap CSS"}
+        skills={"Skills: HTML | Javascript | CSS | Bootstrap CSS"}
         img="https://upload.wikimedia.org/wikipedia/en/2/2e/Indian_Institute_of_Information_Technology%2C_Allahabad_Logo.png"
         />
         </TimelineContent>

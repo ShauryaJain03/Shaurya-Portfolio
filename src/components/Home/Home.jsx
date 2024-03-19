@@ -2,7 +2,7 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      <main className="flex flex-col-reverse md:flex-row justify-start min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10 ">
+      <main className="flex flex-col-reverse md:flex-row justify-start min-w-[360px] max-w-[1267px] box-border mx-auto md:my-20 my-10" id="about">
         <section className="md:w-3/5 w-full md:h-full h-1/2 flex flex-col justify-start md:justify-center items-center px-6 text-center">
           <div className="w-4/5">
             <p className="text-4xl md:text-5xl font-heading font-bold md:text-left md:py-5 pt-8 pb-4 text-porttext">

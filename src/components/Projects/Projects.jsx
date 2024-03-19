@@ -10,8 +10,8 @@ import Typography from '@mui/material/Typography';
 
 function Item(props) {
   return (
-    <div className="content">
-    <Card sx={{ maxWidth: 280}}>
+    <div className="content  shadow-lg shadow-stone-200">
+    <Card sx={{ minWidth: 220,height:320}}>
       <CardMedia
         sx={{ height: 140 , marginX:3,marginTop:3}}
         image={`${props.img}`}
@@ -58,8 +58,15 @@ function Projects() {
           columns={{ xs: 1, sm: 8, md: 12 }}>
           <Grid xs={1} sm={4} md={4}>
             <Item
-              name={"Document Summarizer"}
-              desc={"AI Document summarizer to make your job easy"}
+              name={"Grievance Redressal Portal"}
+              desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, eos!"}
+              img={"gdsc.png"}
+            />
+          </Grid>
+          <Grid xs={1} sm={4} md={4}>
+            <Item
+              name={"WanderFree"}
+              desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, eos!"}
               img={"gdsc.png"}
             />
           </Grid>
