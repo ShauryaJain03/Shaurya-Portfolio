@@ -58,15 +58,15 @@ function Projects() {
           columns={{ xs: 1, sm: 8, md: 12 }}>
           <Grid xs={1} sm={4} md={4}>
             <Item
-              name={"Grievance Redressal Portal"}
-              desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, eos!"}
+              name={"Grievance Portal"}
+              desc={"Lorem ipsum, dolor sit amet consectetur."}
               img={"gdsc.png"}
             />
           </Grid>
           <Grid xs={1} sm={4} md={4}>
             <Item
               name={"WanderFree"}
-              desc={"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, eos!"}
+              desc={"Lorem ipsum, dolor sit amet consectetur."}
               img={"gdsc.png"}
             />
           </Grid>

@@ -7,7 +7,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 export default function Tech() {
   return (
     <div id='skills'>
-      <div className="w-full flex flex-col justify-center items-center" id="skills">
+      <div className="w-full flex flex-col justify-center items-center min-w-[360px] max-w-[1267px] box-border mx-auto" id="skills">
       <p className="text-3xl text-porttext font-bold font-heading my-8">
         Skills
       </p>

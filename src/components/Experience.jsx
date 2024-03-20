@@ -9,7 +9,7 @@ import { LaptopMac } from '@mui/icons-material';
 
 export function EduComp(props){
     return <div className="flex items-center justify-center my-6">
-        <div className="border-2 md:h-[200px] md:w-[500px] w-[300px] rounded-lg flex flex-col border-portdarkpurple bg-white">
+        <div className="border-2 md:h-[200px] md:w-[500px] w-[250px] rounded-lg flex flex-col border-portdarkpurple bg-white">
             <div className="h-2/5 flex items-center justify-center mx-4">
                 <div className="w-[12%] h-4/5">
                     <img src={`${props.img}`} className="rounded-xl"/>
@@ -33,7 +33,7 @@ export function EduComp(props){
 }
 
 function Experience(){
-    return <div className="flex flex-col items-center my-8 justify-center" id='exp'>
+    return <div className="flex flex-col items-center my-8 justify-center min-w-[360px] max-w-[1267px] box-border mx-auto" id='exp'>
         <div className="text-porttext text-3xl font-semibold font-heading my-3">Experience</div>
         <br/>
         

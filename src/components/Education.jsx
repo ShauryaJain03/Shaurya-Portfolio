@@ -7,7 +7,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import SchoolIcon from '@mui/icons-material/School';
 function Education(){
-    return  <div className="flex flex-col items-center my-8 justify-center" id="edu">
+    return  <div className="flex flex-col items-center my-8 justify-center min-w-[360px] max-w-[1267px] box-border mx-auto" id="edu">
     <div className="text-porttext text-3xl font-semibold font-heading my-3">Education</div>
     <br/>
     
