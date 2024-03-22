@@ -26,7 +26,7 @@ function Contact() {
           I&apos;m excited to connect with you! Feel free to use the contact
           form below or reach me directly via email!
         </p>
-        <div className="md:flex w-3/5 md:w-2/5 justify-between px-4 items-center ">
+        <div className="md:flex w-3/5 lg:w-2/5 justify-between px-4 items-center ">
           <div className="flex my-2 gap-2">
             <LocationOnIcon className="text-portblue" />
             <p className="text-porttext">Noida , India</p>

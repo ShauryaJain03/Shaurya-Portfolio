@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full flex justify-between md:justify-around items-center h-20 mx-auto px-8 font-bold shadow-lg min-w-[360px] max-w-[1627px] box-border font-heading top-0 bg-gradient-to-r from-portlight to-portbackground">
+    <nav className="w-full flex justify-between lg:justify-around items-center h-20 mx-auto px-8 font-bold shadow-lg min-w-[360px] max-w-[1627px] box-border font-heading top-0 bg-gradient-to-r from-portlight to-portbackground">
       {/* Logo */}
 
       <Link to="/" spy={true} smooth={true} duration={500}>
@@ -30,7 +30,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Navigation */}
-      <ul className="hidden md:flex mr-1">
+      <ul className="hidden lg:flex mr-1">
         {navItems.map((item) => (
           <Link
             key={item.id}
@@ -55,14 +55,14 @@ const Navbar = () => {
         </a>
       </ul>
       <a href="">
-        <button className="py-2 px-3 mx-3 rounded-full m-2 cursor-pointer duration-300 border-portdarkpurple border-2 text-lg text-portdarkpurple hidden md:block">
+        <button className="py-2 px-3 mx-3 rounded-full m-2 cursor-pointer duration-300 border-portdarkpurple border-2 text-lg text-portdarkpurple hidden lg:block">
               Resume
         </button>
       </a>
       
 
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className="block md:hidden mr-2">
+      <div onClick={handleNav} className="block lg:hidden mr-2">
         {nav ? <CloseIcon /> : <MenuIcon />}
       </div>
 
@@ -70,7 +70,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-portlight ease-in-out duration-500 z-10"
+            ? "fixed lg:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-portlight ease-in-out duration-500 z-10"
             : "ease-in-out w-[100%] duration-500 fixed top-0 bottom-0 left-[-100%]"
         }
       >
